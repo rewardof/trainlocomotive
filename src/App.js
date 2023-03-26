@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "./api/axios";
 import Colculate from "./components/calculate";
-import Result from "./components/result";
+import Result from "./components/new-result";
 
 function App() {
     const [list, setList] = useState([]);
