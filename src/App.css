@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(240, 237, 237);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(224, 221, 221);
+}
+.app {
+    position: relative;
+    padding-top: 20px;
+}
+
+.table-box {
+    margin-top: 30px;
+}
+
+.calculate-box {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+.calculate-box.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.result-box {
+    padding: 0 20px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.result-box.active {
+    opacity: 1;
+    visibility: visible;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+.mb-5 {
+    margin-bottom: 10px;
+}
+
+.app.active {
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-box .btn-box {
+    display: flex;
+    gap: 10px;
+}
+
+.ant-divider-horizontal {
+    margin: 8px 0 !important;
+}
+
+.result-box .ant-tag {
+    font-size: 14px !important;
+    border: 1px solid #d9d9d9;
+    display: flex !important;
+    align-items: center !important;
+}
+.ant-btn{
+    border-radius: 7px !important;
+}
+.tag{
+    display: flex;
+    flex-direction: column;
+    line-height: 16px;
+    align-items: left;
+    justify-content: center;
+    margin-right: 15px;
+}
+.tag .distance {
+    font-size: 14px;
+    font-family: "Ubuntu", "sans-serif";
+}
+.tag .time{
+    font-size: 11px;
+    font-family: "Ubuntu",
+    "sans-serif";
+}
