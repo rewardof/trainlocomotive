@@ -88,7 +88,7 @@ const Header = ({ getResult, togglePage }) => {
       <Row gutter={24}>
         <Col span={12}>
           <Tag color="blue" style={{ marginBottom: "20px", fontSize: "14px" }}>
-            Вагон рақами орқали унинг тортиш ҳисобларида зарур бўлган параметрларини аниқлаш учун дастур
+            Rolikli podshipniklardagi yuk vagonlari harakatiga bo'ginli yo'lda asosiy solishtirma qarshilikni hisoblash uchun dastur
           </Tag>
         </Col>
       </Row>
