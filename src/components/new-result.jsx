@@ -149,7 +149,7 @@ const TableView = ({
                     breakingTime={breakingTime}
                 />
             </div>
-            <Card title="Title 1">
+            <Card title="Vagonlarning har guruhiga to'g'ri keluvchi soni, tarkibdagi ulushi, og'irligi, o'qlar soni va o'qqa tushadigan og'irligini hisoblash">
                 <Table
                     columns={columns2}
                     dataSource={List || []}
@@ -158,7 +158,7 @@ const TableView = ({
                     scroll={{ x: "100%", y: 500 }}
                 />
             </Card>
-            <Card title="Title 2">
+            <Card title="O'rtacha og'irlikdagi solishtirma qarshilikni hisoblash">
                 <Table
                     columns={columns}
                     dataSource={data?.resistances || []}
