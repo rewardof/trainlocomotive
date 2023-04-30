@@ -15,6 +15,7 @@ const TableView = ({
     breakingTime,
 }) => {
     const [data, setData] = useState()
+    const [params, setParams] = useState({articulated_road: true})
     const columns = [
         {
             title: "T/R",
@@ -119,7 +120,8 @@ const TableView = ({
         },
     ];
     const getResult = () => {
-        axios("/calculation-resistance/")
+        console.log(params)
+        axios("/calculation-resistance/", {params})
             .then((res) => {
                 setData(res.data);
             })
@@ -129,7 +131,7 @@ const TableView = ({
     };
     useEffect(() => {
         getResult()
-    }, [])
+    }, [params])
 
     const List = Object.keys(data?.vagons_group_data || {}).map(key =>
         data?.vagons_group_data[key]
@@ -147,6 +149,8 @@ const TableView = ({
                     setVisible={setVisible}
                     distance={distance}
                     breakingTime={breakingTime}
+                    setParams={setParams}
+
                 />
             </div>
             <Card title="Vagonlarning har guruhiga to'g'ri keluvchi soni, tarkibdagi ulushi, og'irligi, o'qlar soni va o'qqa tushadigan og'irligini hisoblash">
