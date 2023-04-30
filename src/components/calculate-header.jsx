@@ -88,7 +88,7 @@ const Header = ({ getResult, togglePage }) => {
       <Row gutter={24}>
         <Col span={12}>
           <Tag color="blue" style={{ marginBottom: "20px", fontSize: "14px" }}>
-            Rolikli podshipniklardagi yuk vagonlari harakatiga bo'ginli yo'lda asosiy solishtirma qarshilikni hisoblash uchun dastur
+            Rolikli podshipniklardagi yuk vagonlari harakatiga bo'g'inli va bo'g'insiz yo'lda asosiy solishtirma qarshilikni hisoblash uchun dastur
           </Tag>
         </Col>
       </Row>
